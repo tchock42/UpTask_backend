@@ -1,6 +1,5 @@
 {
     "compilerOptions": {
-        "baseUrl": ".",
         "outDir": "./dist",
         "rootDir": "./src",
         "lib": [
@@ -14,7 +13,7 @@
         "esModuleInterop": true,
         "declaration": true
     },
-        "include": [
+    "include": [
         "src/**/*.ts"
     ]
 }

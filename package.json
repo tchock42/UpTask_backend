@@ -5,7 +5,7 @@
   "name": "uptask-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts",
     "dev:api": "nodemon --exec ts-node src/index.ts --api",
@@ -17,7 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/morgan": "^1.9.9",
-    "bcrypt": "^4.0.1",
+    "bcrypt": "^5.1.1",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
