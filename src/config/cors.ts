@@ -7,7 +7,7 @@ export const corsConfig: CorsOptions = {
         if(process.argv[2] === '--api'){
             whitelist.push(undefined)   // si se ejecuta desde el backend permite la conexion
         }
-        if(whitelist.includes(origin)){
+        if(whitelist.includes(origin) || !origin){
             callback(null, true)        // permite conexión
         }else{
             callback(new Error('Error de CORS'))
