@@ -12,7 +12,9 @@ dotenv.config()         // carga la información del .env
 connectDB()             // conecta con la base de datos
 
 const app = express()   // Creación de la instancia de Express para el servidor
-
+app.get('/', (req, res) => {
+    res.send('API is running...');
+});
 app.use(cors(corsConfig))   // conexión entre backend y frontend
 app.use(morgan('dev'))
 app.use(express.json()) // habilitar la lectura de formato json
